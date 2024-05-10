@@ -20,7 +20,29 @@
         "Alejandro" => 15,
     ];
 
-    echo "la edad de Juan es " . $edades['Juan'] ;
+    echo "la edad de Juan es   {$edades['Juan']} " ;
 
 ?>
 
+<h1> Matrices</h1>
+<p>Una matriz es una arreglo que puede contener arreglos en su interior</p>
+
+<?php 
+
+$personas = [
+    "Nombres" => [
+        "david",
+        "pedro",
+        "Juanito", 
+    ],
+    "Apellidos" => [
+        "Jimenez",
+        "Lopez",
+        "Gonzales",
+    ]
+];
+
+echo "Hola {$personas["Nombres"][0]} {$personas["Apellidos"][0]}  ";
+
+
+?>
