@@ -5,3 +5,9 @@
 <ol>
     <li> <a href="Arreglos_funciones_estructuras_de_control">
      Arreglos funciones y estructuras de control </a> </li>
+    <ol>
+        <li><a href="Arreglos_funciones_estructuras_de_control/array/">Arreglos</a></li>
+        <li><a href="Arreglos_funciones_estructuras_de_control/ciclos/">Ciclos</a></li>
+        <li><a href="Arreglos_funciones_estructuras_de_control/condicionales/">Condicionales</a></li>
+    </ol>
+</ol>
