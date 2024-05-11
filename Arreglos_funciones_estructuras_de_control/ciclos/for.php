@@ -10,4 +10,11 @@ for ($i=0; $i < 10; $i++) {
 
 }
 
+/* Contadores por separados */
+
+for ($i=0 , $j =0; $i < 10 , $j < 20; $i++ , $j += 2) { 
+   echo "El valor de i es :" . $i . "<br>" ;
+   echo "El valor de j es :" . $j . "<br>" ;
+}
+
 ?>
