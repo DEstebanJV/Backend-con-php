@@ -10,4 +10,11 @@
         <li><a href="Arreglos_funciones_estructuras_de_control/ciclos/">Ciclos</a></li>
         <li><a href="Arreglos_funciones_estructuras_de_control/condicionales/">Condicionales</a></li>
     </ol>
+    <li> <a href="baseDeDatos/">
+     Conexion a una base de datos</a> </li>
+     <ol>
+        <li><a href="baseDeDatos/conexion.php">Conexion</a></li>
+        <li><a href="baseDeDatos/consulta.php">Consulta todos los registros</a></li>
+        <li><a href="baseDeDatos/insert.php">Insertar un nuevo registro</a></li>
+    </ol>
 </ol>
