@@ -9,6 +9,7 @@
         <li><a href="Arreglos_funciones_estructuras_de_control/array/">Arreglos</a></li>
         <li><a href="Arreglos_funciones_estructuras_de_control/ciclos/">Ciclos</a></li>
         <li><a href="Arreglos_funciones_estructuras_de_control/condicionales/">Condicionales</a></li>
+         <li><a href="Arreglos_funciones_estructuras_de_control/funciones/">Funciones</a></li>
     </ol>
     <li> <a href="baseDeDatos/">
      Conexion a una base de datos</a> </li>
