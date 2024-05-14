@@ -11,7 +11,7 @@
 
  <?php 
  
- /* Sintaxis */
+# Nota Los valores enviado en los parentesis de la funcion, Son llamados parametros
 
  function  getPokemon(int $pokeElegido) : string {
     $pokemon = array("Pikachu", "Charmander", "Squirtle", "Bulbasaur");
@@ -34,6 +34,56 @@
     }
  }  
 
-echo getPokemon(rand(0,3));
+ getPokemon(rand(0,3)); // para mostrar agrega el echo 
  
  ?>    
+
+
+<h2>Profundizando en parametros</h2>
+
+<?php 
+// adicionando valores por defecto
+function suma($a = 0, $b = 0){
+
+    return "la suma de $a + $b es ". $a + $b . "<br>";
+
+}
+
+suma(7,89);
+
+# valores por defecto
+suma();
+
+#pasando un solo valor
+
+suma(9);
+
+#juntar arreglos
+
+$arreglo1 = [1,2,3];
+$arreglo2 = [4,5,6];
+
+
+$resultado = [...$arreglo1, ...$arreglo2];
+
+# print_r($resultado);
+
+
+#Aplicado a funciones 
+$numeros = [1,2,3];
+
+function sumaArreglos($a, $b){
+    return "la suma de $a + $b es ". $a + $b . "<br>";
+}
+
+suma(...$numeros);
+
+#forma inversa parametros de forma dinamica
+
+function sumaInfinita(...$params){
+  
+    return "la suma de los numeros es ". array_sum($params) . "<br>";
+}
+
+echo sumaInfinita(1,2,1,1);
+?>
