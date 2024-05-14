@@ -9,8 +9,14 @@
      un nombre y utilizarla cuantas veces queramos sin preocuptarnos por como trabaja por dentro</p>
 
 
+     
+<h3>
+    Uso del return en las funciones 
+</h3>
+<p>Retornar un valor significa decilr explicitamente a la funcion que es lo que debe devolver</p>
+<p>Esto lo hacemos con la palabra reservada "Return" y usualmente guardamos ese valor en una variable</p>
+
  <?php 
- 
 # Nota Los valores enviado en los parentesis de la funcion, Son llamados parametros
 
  function  getPokemon(int $pokeElegido) : string {
