@@ -1,6 +1,6 @@
-
-
 <?php
+
+#Para iniciar el juego incialo desde la terminal llamando el archivo php hangmangame.php
 
 function clear()
 {
