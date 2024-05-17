@@ -1,4 +1,4 @@
-<h1> Manual BAsico de PHP</h1>
+<h1> Manual Basico de PHP</h1>
 <p> En este repositorio podras encontrar una guia para el aprendizaje de php. </p>
 <p> Podras encontrar desde lo mas basico hasta ejercicios mas complejos</p>
 <p> Te invito a leerlo y a tenerlo a tu disposicion como una guia interactiva con ejercicios para aprender. </p>
