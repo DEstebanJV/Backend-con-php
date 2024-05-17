@@ -27,5 +27,6 @@
         <li><a href="/cursopracticophp/operadoresLogicos.php">Operadores Logicos</a></li>
         <li><a href="/cursopracticophp/operadoresAritmeticos.php">Operadores Aritmeticos</a></li>
         <li><a href="/cursopracticophp/funcionesMatematicas.php">Funciones Matematicas</a></li>
+        <li><a href="/cursopracticophp/juegoOrdenamiento.php">Juego de ordenamiento</a></li>
     </ol>
 </ol>

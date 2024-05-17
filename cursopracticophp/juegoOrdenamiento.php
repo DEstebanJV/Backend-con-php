@@ -1,8 +1,26 @@
-<h1>Creacion del JUEGO</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego de Ordenamiento</title>
+    <style>
+        .correcta {
+            color: green;
+        }
+        .incorrecta {
+            color: red;
+        }
+        .no-ingresada {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
 
-<p>Desarrollar una aplicacion que muestra una lista de palabras que estan en desorden,
-    el usuario debe ordenar las letras para encontrar la palabra correcta e ingresarla
-    despues de enviar sus resultados el usuario podra ver si acerto o fallo y cual era la palabra correcta
+<h1>Creación del JUEGO</h1>
+<p>Desarrollar una aplicación que muestra una lista de palabras que están en desorden,
+    el usuario debe ordenar las letras para encontrar la palabra correcta e ingresarla.
+    Después de enviar sus resultados, el usuario podrá ver si acertó o falló y cuál era la palabra correcta.
 </p>
 
 <h1>Adivina la palabra</h1>
@@ -39,14 +57,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isset($_POST["palabra$i"]) && !empty($_POST["palabra$i"])) {
             $inputPalabra = $_POST["palabra$i"];
             $esCorrecta = validadorPalabra($inputPalabra, $palabrasCorrectas[$i]);
-            $resultados[] = $esCorrecta ? "Correcta" : "Incorrecta";
+            $resultados[] = [
+                'resultado' => $esCorrecta ? "Correcta" : "Incorrecta",
+                'clase' => $esCorrecta ? "correcta" : "incorrecta"
+            ];
         } else {
-            $resultados[] = "No ingresada";
+            $resultados[] = [
+                'resultado' => "No ingresada",
+                'clase' => "no-ingresada"
+            ];
         }
     }
-
+    echo "<h2>Resultados:</h2>";
     foreach ($resultados as $index => $resultado) {
-        echo "Palabra " . ($index + 1) . ": " . $resultado . "<br>";
+        echo "<p class='" . $resultado['clase'] . "'>Palabra " . ($index + 1) . ": " . $resultado['resultado'] . "</p>";
     }
 }
 
