@@ -5,27 +5,27 @@
     despues de enviar sus resultados el usuario podra ver si acerto o fallo y cual era la palabra correcta
 </p>
 
-<?php 
-$palabrasCorrectas = ["sol", "luna", "cielo"];
+<h1>Adivina la palabra</h1>
+<?php
+#FORM
+$palabrasCorrectas = ["sol", "luna", "cielo","campo"];
 $palabrasDesordenadas = [];
 
 foreach ($palabrasCorrectas as $palabra) {
     $palabraDesordenada = str_shuffle($palabra); // Desordenar la palabra
     array_push($palabrasDesordenadas, $palabraDesordenada); // Agregar la palabra desordenada al arreglo
 }
+
+$form = "<form action='juegoOrdenamiento.php' method='post'>";
+foreach ($palabrasDesordenadas as $index => $palabraDesordenada) {
+    $form .= "<label>Palabra " . ($index + 1) . ": $palabraDesordenada</label> <br>";
+    $form .= "<input type='text' name='palabra$index'><br>";
+}
+$form .= "<button type='submit'>Enviar</button>";
+$form .= "</form>";
+echo $form;
+
 ?>
-
-<h1>Adivina la palabra</h1>
-<form action="juegoOrdenamiento.php" method="post">
-    <label>Primera palabra <?= $palabrasDesordenadas[0] ?></label>
-    <input type="text" name="palabra0">
-    <label>Segunda palabra <?= $palabrasDesordenadas[1] ?></label>
-    <input type="text" name="palabra1">
-    <label>Tercera palabra <?= $palabrasDesordenadas[2] ?></label>
-    <input type="text" name="palabra2">
-    <button>Enviar</button>
-</form>
-
 <?php
 
 function validadorPalabra($palabra, $palabraCorrecta) {
@@ -36,9 +36,13 @@ function validadorPalabra($palabra, $palabraCorrecta) {
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $resultados = [];
     for ($i = 0; $i < count($palabrasCorrectas); $i++) {
-        $inputPalabra = $_POST["palabra$i"];
-        $esCorrecta = validadorPalabra($inputPalabra, $palabrasCorrectas[$i]);
-        $resultados[] = $esCorrecta ? "Correcta" : "Incorrecta";
+        if (isset($_POST["palabra$i"]) && !empty($_POST["palabra$i"])) {
+            $inputPalabra = $_POST["palabra$i"];
+            $esCorrecta = validadorPalabra($inputPalabra, $palabrasCorrectas[$i]);
+            $resultados[] = $esCorrecta ? "Correcta" : "Incorrecta";
+        } else {
+            $resultados[] = "No ingresada";
+        }
     }
 
     foreach ($resultados as $index => $resultado) {
