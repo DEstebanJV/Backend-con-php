@@ -26,5 +26,6 @@
         <li><a href="/cursopracticophp/pensamientoLogico.php">Pensamiento logico</a></li>
         <li><a href="/cursopracticophp/operadoresLogicos.php">Operadores Logicos</a></li>
         <li><a href="/cursopracticophp/operadoresAritmeticos.php">Operadores Aritmeticos</a></li>
+        <li><a href="/cursopracticophp/funcionesMatematicas.php">Funciones Matematicas</a></li>
     </ol>
 </ol>
