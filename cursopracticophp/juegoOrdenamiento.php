@@ -59,18 +59,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $esCorrecta = validadorPalabra($inputPalabra, $palabrasCorrectas[$i]);
             $resultados[] = [
                 'resultado' => $esCorrecta ? "Correcta" : "Incorrecta",
-                'clase' => $esCorrecta ? "correcta" : "incorrecta"
+                'clase' => $esCorrecta ? "correcta" : "incorrecta",
+                'palabra_correcta' => $palabrasCorrectas[$i]
             ];
         } else {
             $resultados[] = [
                 'resultado' => "No ingresada",
-                'clase' => "no-ingresada"
+                'clase' => "no-ingresada",
+                'palabra_correcta' => $palabrasCorrectas[$i]
             ];
         }
     }
     echo "<h2>Resultados:</h2>";
     foreach ($resultados as $index => $resultado) {
-        echo "<p class='" . $resultado['clase'] . "'>Palabra " . ($index + 1) . ": " . $resultado['resultado'] . "</p>";
+        echo "<p class='" . $resultado['clase'] . "'>Palabra " . ($index + 1) . ": " . $resultado['resultado'];
+        if ($resultado['resultado'] === "Incorrecta" ) {
+            echo " - La palabra correcta es: " . $resultado['palabra_correcta'];
+        }
+        echo "</p>";
     }
 }
 
