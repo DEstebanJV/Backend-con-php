@@ -12,3 +12,18 @@ Incremento: Sirve para incrementar un valor numérico en 1, usamos el operador +
 Decremento: Sirve para disminuir un valor numérico en 1, usamos el operador --. Ejemplo: $value--, restará 1 a $value. <br>
 Módulo: Sirve para saber el resto de una división entera, usamos el operador %. Ejemplo: 10 % 3; da como resultado 1. Un uso muy polular de este operador es para saber si un número es par o impar: <br>
 </p>
+
+<?php 
+
+$valorA = 4;
+$valorB = 2;
+
+$suma = $valorA + $valorB;
+$resta = $valorA - $valorB;
+$multiplicacion = $valorA * $valorB;
+$division = $valorA / $valorB;
+$incremento = $valorA++;
+$decremento = $valorA--;
+$modulo = $valorA % $valorB;
+
+?>
