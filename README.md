@@ -12,6 +12,7 @@
         <li><a href="Arreglos_funciones_estructuras_de_control/ciclos/">Ciclos</a></li>
         <li><a href="Arreglos_funciones_estructuras_de_control/condicionales/">Condicionales</a></li>
          <li><a href="Arreglos_funciones_estructuras_de_control/funciones/">Funciones</a></li>
+         <li><a href="Arreglos_funciones_estructuras_de_control/juego/hangManGame.php">Juego Hang Man Game</a></li>
     </ol>
     <li> <a href="baseDeDatos/">
      Conexion a una base de datos</a> </li>
@@ -28,5 +29,13 @@
         <li><a href="/cursopracticophp/operadoresAritmeticos.php">Operadores Aritmeticos</a></li>
         <li><a href="/cursopracticophp/funcionesMatematicas.php">Funciones Matematicas</a></li>
         <li><a href="/cursopracticophp/juegoOrdenamiento.php">Juego de ordenamiento</a></li>
+    </ol>
+    <li> <a href="/cursoIntegracionConHtml/">
+     Curso de php: Integracion con html</a> </li>
+     <ol>
+        <li><a href="/cursoIntegracionConHtml/tiposDeRender.php">Tipos de Render</a></li>
+        <li><a href="/cursoIntegracionConHtml/phpWithJs/">Php con Javascript</a></li>
+        <li><a href="/cursoIntegracionConHtml/"></a></li>
+        <li><a href="/cursoIntegracionConHtml/"></a></li>
     </ol>
 </ol>
