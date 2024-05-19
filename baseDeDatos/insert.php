@@ -14,7 +14,7 @@ if ($mysqli->query($sql) === TRUE) {
 
 }
 
-create_user("150", "Juan", "Pérez", "juan@example.com", "1990-05-09");
+create_user(rand(1,1000), "Juan", "Pérez", "juan@example.com", "1990-05-09");
 
 
 
