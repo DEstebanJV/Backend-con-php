@@ -14,7 +14,7 @@ if ($mysqli->query($sql) === TRUE) {
 
 }
 
-create_user("150", "Juan", "Pérez", "juan@example.com", "1990-05-09");
+create_user("001", "Juan", "Pérez", "juan@example.com", "1990-05-09");
 
 
 
