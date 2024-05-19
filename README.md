@@ -20,6 +20,8 @@
         <li><a href="baseDeDatos/conexion.php">Conexion</a></li>
         <li><a href="baseDeDatos/consulta.php">Consulta todos los registros</a></li>
         <li><a href="baseDeDatos/insert.php">Insertar un nuevo registro</a></li>
+        <li><a href="baseDeDatos/update.php">Actualizar un registro</a></li>
+        <li><a href="baseDeDatos/delete.php">Eliminar un registro</a></li>
     </ol>
     <li> <a href="cursopracticophp/">
      Curso practico de php</a> </li>
